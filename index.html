@@ -16,50 +16,52 @@ body{
   font-family:Arial,sans-serif;
   background:#f5f4f0;
   padding:20px;
+  color:#222;
 }
 
 .container{
-  max-width:640px;
+  max-width:700px;
   margin:0 auto;
 }
 
 h1{
-  font-size:18px;
-  margin-bottom:20px;
-  padding-bottom:14px;
+  font-size:26px;
+  margin-bottom:24px;
+  padding-bottom:16px;
   border-bottom:1px solid #ddd;
+  line-height:1.5;
 }
 
 .card{
   background:#fff;
   border:1px solid #e0ddd6;
-  border-radius:12px;
-  padding:16px 18px;
-  margin-bottom:14px;
+  border-radius:16px;
+  padding:22px;
+  margin-bottom:18px;
 }
 
 .card-header{
   display:flex;
   align-items:center;
-  gap:10px;
-  margin-bottom:14px;
+  gap:12px;
+  margin-bottom:18px;
 }
 
 .badge{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:30px;
-  height:30px;
+  width:36px;
+  height:36px;
   border-radius:50%;
-  font-size:13px;
+  font-size:16px;
   font-weight:700;
 }
 
 .badge-sm{
-  width:22px;
-  height:22px;
-  font-size:11px;
+  width:28px;
+  height:28px;
+  font-size:13px;
 }
 
 .blue{
@@ -83,60 +85,103 @@ h1{
 }
 
 .card-title{
-  font-size:15px;
+  font-size:22px;
   font-weight:700;
+  line-height:1.4;
 }
 
 .lbl{
-  font-size:14px;
+  font-size:18px;
   font-weight:700;
   color:#444;
-  margin-bottom:10px;
+  margin-bottom:12px;
   display:flex;
   align-items:center;
-  gap:6px;
+  gap:8px;
 }
 
 .divider{
   border:none;
   border-top:1px solid #f0ede8;
-  margin:14px 0;
+  margin:18px 0;
 }
 
 .row{
   display:flex;
   align-items:center;
-  gap:10px;
-  padding:10px 12px;
-  border-radius:8px;
+  gap:14px;
+  padding:16px;
+  border-radius:10px;
   background:#f9f8f5;
-  margin-bottom:7px;
+  margin-bottom:10px;
 }
 
 .row span{
-  font-size:13px;
-  color:#555;
+  font-size:17px;
+  color:#444;
   flex:1;
+  line-height:1.5;
 }
 
 a.btn{
-  font-size:12px;
-  padding:6px 12px;
-  border-radius:7px;
+  font-size:15px;
+  padding:10px 18px;
+  border-radius:8px;
   border:1px solid #d0cec8;
   color:#222;
   background:#fff;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
+  white-space:nowrap;
 }
 
 .footer{
   text-align:center;
-  font-size:12px;
-  color:#aaa;
-  margin-top:20px;
-  padding-top:14px;
+  font-size:14px;
+  color:#888;
+  margin-top:24px;
+  padding-top:16px;
   border-top:1px solid #e0ddd6;
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+  body{
+    padding:14px;
+  }
+
+  h1{
+    font-size:22px;
+  }
+
+  .card{
+    padding:18px;
+  }
+
+  .card-title{
+    font-size:20px;
+  }
+
+  .lbl{
+    font-size:17px;
+  }
+
+  .row{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .row span{
+    font-size:16px;
+  }
+
+  a.btn{
+    width:100%;
+    text-align:center;
+    font-size:16px;
+    padding:12px;
+  }
 }
 </style>
 </head>
@@ -164,6 +209,20 @@ a.btn{
     <span>📝 স্বেচ্ছাসেবক তথ্য সংগ্রহ</span>
     <a class="btn" href="https://ee.kobo.asf.sh/x/1fJEVOKn" target="_blank">
       খুলুন ↗
+    </a>
+  </div>
+
+  <hr class="divider">
+
+  <div class="lbl">
+    <span class="badge purple badge-sm">B</span>
+    স্বেচ্ছাসেবকদের তথ্য দেখা
+  </div>
+
+  <div class="row">
+    <span>📊 KoBoToolbox টেবিল (স্বেচ্ছাসেবকদের তথ্য)</span>
+    <a class="btn" href="https://css.kobo.asf.sh/#/forms/aosuKs2ZJhKvRaCyQFnhKg" target="_blank">
+      দেখুন ↗
     </a>
   </div>
 
@@ -197,94 +256,8 @@ a.btn{
   </div>
 
   <div class="row">
-    <span>📊 KoBoToolbox টেবিল (দ্রুত দেখতে) </span>
+    <span>📊 KoBoToolbox টেবিল (দ্রুত দেখতে)</span>
     <a class="btn" href="https://css.kobo.asf.sh/#/forms/aWpp8BPrpi3GwmJATMLfiQ/data/table" target="_blank">
-      দেখুন ↗
-    </a>
-  </div>
-
-  <div class="row">
-    <span>⚙️ AppScript ভিউ (আবেদন দেখা ও PDF ডাউনলোড)</span>
-    <a class="btn" href="https://script.google.com/a/macros/assunnahfoundation.org/s/AKfycbxLs16TVAGSSnGIIISY9wzav_fKX98bopDzssdIV_knVWWNwoVno8hA9DwySQ2Kfxx2TA/exec" target="_blank">
-      দেখুন ↗
-    </a>
-  </div>
-
-</div>
-
-<!-- 3 -->
-<div class="card">
-
-  <div class="card-header">
-    <span class="badge green">3</span>
-    <span class="card-title">পশু ও মাংসের ছবি (ডোনারের জন্য)</span>
-  </div>
-
-  <div class="lbl">
-    <span class="badge green badge-sm">A</span>
-    ছবি পাঠানো
-  </div>
-
-  <div class="row">
-    <span>📤 ছবি আপলোড ফর্ম</span>
-    <a class="btn" href="https://ee.kobo.asf.sh/x/27YbdCtk" target="_blank">
-      খুলুন ↗
-    </a>
-  </div>
-
-  <hr class="divider">
-
-  <div class="lbl">
-    <span class="badge green badge-sm">B</span>
-    ছবি দেখা
-  </div>
-
-  <div class="row">
-    <span>📊 KoBoToolbox টেবিল</span>
-    <a class="btn" href="https://css.kobo.asf.sh/#/forms/aPePXH5q7YPcjaGufRvh7d/data/table" target="_blank">
-      দেখুন ↗
-    </a>
-  </div>
-
-</div>
-
-<!-- 4 -->
-<div class="card">
-
-  <div class="card-header">
-    <span class="badge amber">4</span>
-    <span class="card-title">উপকারভোগীর ছবি</span>
-  </div>
-
-  <div class="lbl">
-    <span class="badge amber badge-sm">A</span>
-    ছবি পাঠানো
-  </div>
-
-  <div class="row">
-    <span>📤 ছবি আপলোড ফর্ম</span>
-    <a class="btn" href="https://ee.kobo.asf.sh/x/jXwbM48i" target="_blank">
-      খুলুন ↗
-    </a>
-  </div>
-
-  <hr class="divider">
-
-  <div class="lbl">
-    <span class="badge amber badge-sm">B</span>
-    ছবি দেখা
-  </div>
-
-  <div class="row">
-    <span>📊  KoBoToolbox টেবিল (দ্রুত দেখতে)</span>
-    <a class="btn" href="https://css.kobo.asf.sh/#/forms/aHAgRCz4jhHvNqLZ8Xt8sc/data/table" target="_blank">
-      দেখুন ↗
-    </a>
-  </div>
-
-  <div class="row">
-    <span>⚙️ AppScript ভিউ (আবেদন দেখা ও PDF ডাউনলোড)</span>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbxaP5neaM2sqdU5erhPevGHHnoEL1Uo0nbv38wP8XsMDqHO7KWxzzwVbfee4a1_P8gr/exec" target="_blank">
       দেখুন ↗
     </a>
   </div>
